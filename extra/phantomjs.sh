@@ -1,9 +1,9 @@
--#!/bin/sh		
- -		
- -VERSION=2.1.1		
- -PHANTOM_URL="https://dl.dropboxusercontent.com/u/77237437/cat/phantomjs-$VERSION-linux-x86_64.tar.bz2"		
- -		
- -echo "-----> Installing phantomjs."		
- -# Just extract the one file (the binary) and not all the examples/readme's/etc.		
- -FILE="phantomjs-$VERSION-linux-x86_64/bin/phantomjs"		
- -curl -L -sS $PHANTOM_URL -o - | tar -jxf - -C $COMPILE_DIR $FILE --strip 1
+#!/bin/sh		
+		
+VERSION=2.1.1		
+PHANTOM_URL="https://dl.dropboxusercontent.com/u/77237437/cat/phantomjs-$VERSION-linux-x86_64.tar.bz2"		
+		
+echo "-----> Installing phantomjs."		
+# Just extract the one file (the binary) and not all the examples/readme's/etc.		
+FILE="phantomjs-$VERSION-linux-x86_64/bin/phantomjs"		
+curl -L -sS $PHANTOM_URL -o - | tar -jxf - -C $COMPILE_DIR $FILE --strip 1
